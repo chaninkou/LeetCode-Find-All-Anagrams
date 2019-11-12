@@ -7,7 +7,7 @@ public class Main {
 		
 		System.out.println("s: " + s + " p: " + p);
 		
-		FindAllAnagramsSolution solution = new FindAllAnagramsSolution();
+		FindAllStartingIndexOfAnagramsFunction solution = new FindAllStartingIndexOfAnagramsFunction();
 		
 		System.out.println("Solution: " + solution.findAnagrams(s, p));
 	}
