@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FindAllStartingIndexOfAnagramsFunction {
+	// Sliding window methods
 	public List<Integer> findAnagrams(String s, String p) {
 		List<Integer> result = new ArrayList<>();
 		
@@ -39,13 +40,14 @@ public class FindAllStartingIndexOfAnagramsFunction {
 			
 			// If it reach the p length()
 			if(right - left == p.length()){
-				// Which mean 
 				if(char_counts[s.charAt(left) - 'a'] >= 0){
 					countLeft++;
 				}
 				
-				// Update the current array by adding 1 first, then update the left pointer
+				// Update number of missing elements
 				char_counts[s.charAt(left) - 'a']++;
+				
+				// Move left pointer
 				left++;
 				
 				
