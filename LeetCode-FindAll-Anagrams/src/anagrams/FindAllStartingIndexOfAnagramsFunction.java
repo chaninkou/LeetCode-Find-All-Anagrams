@@ -25,6 +25,7 @@ public class FindAllStartingIndexOfAnagramsFunction {
 		
 		
 		while(right < s.length()){
+			// Letter is part of p
 			if(char_counts[s.charAt(right) - 'a'] >= 1){
 				countLeft--;
 			}
@@ -46,11 +47,7 @@ public class FindAllStartingIndexOfAnagramsFunction {
 				
 				// Update number of missing elements
 				char_counts[s.charAt(left) - 'a']++;
-				
-				// Move left pointer
 				left++;
-				
-				
 			}
 			
 		}
