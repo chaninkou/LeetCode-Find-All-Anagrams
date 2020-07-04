@@ -39,7 +39,7 @@ public class FindAllStartingIndexOfAnagramsFunction {
 				result.add(left);
 			}
 			
-			// If it reach the p length()
+			// sliding window here, move left here
 			if(right - left == p.length()){
 				if(char_counts[s.charAt(left) - 'a'] >= 0){
 					countLeft++;
