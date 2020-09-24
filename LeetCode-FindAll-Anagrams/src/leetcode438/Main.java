@@ -1,4 +1,4 @@
-package anagrams;
+package leetcode438;
 
 public class Main {
 	public static void main(String[] args){
