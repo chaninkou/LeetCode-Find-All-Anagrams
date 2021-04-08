@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FindAllStartingIndexOfAnagramsFunction {
-	// Sliding window methods
+	// Sliding window method
 	public List<Integer> findAnagrams(String s, String p) {
 		List<Integer> result = new ArrayList<>();
 		
