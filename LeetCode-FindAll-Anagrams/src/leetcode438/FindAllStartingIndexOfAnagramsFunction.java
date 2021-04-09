@@ -25,7 +25,7 @@ public class FindAllStartingIndexOfAnagramsFunction {
 		
 		
 		while(right < s.length()){
-			// Letter is part of p
+			// Letter is part of string p
 			if(char_counts[s.charAt(right) - 'a'] >= 1){
 				countLeft--;
 			}
